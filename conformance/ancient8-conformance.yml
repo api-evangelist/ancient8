@@ -1,0 +1,33 @@
+generated: '2026-07-17'
+method: derived
+source: https://docs.ancient8.gg/using-ancient8-chain/network-information
+notes: >-
+  Ancient8 Chain is an EVM-equivalent Ethereum Layer 2 built on the OP Stack with
+  Celestia for data availability. Its public API surface is the standard Ethereum
+  JSON-RPC interface exposed at the documented RPC endpoints. Conformance below is
+  derived from the published network/architecture documentation, not from a formal
+  provider certification.
+standards:
+  - id: ethereum-json-rpc
+    conforms: true
+    evidence: >-
+      Public HTTPS + WebSocket JSON-RPC endpoints documented (rpc.ancient8.gg,
+      wss://rpc.ancient8.gg) — standard Ethereum JSON-RPC method set.
+  - id: evm-equivalent
+    conforms: true
+    evidence: OP Stack EVM-equivalent execution; smart contracts deploy via Hardhat/Remix/thirdweb per docs.
+  - id: op-stack
+    conforms: true
+    evidence: Documentation research section states Ancient8 is built on the Optimism OP Stack.
+  - id: celestia-da
+    conforms: true
+    evidence: Ancient8 uses Celestia for data availability (research/celestia doc + testnet named "Ancient8 Testnet - Celestia").
+  - id: eip-1559-fees
+    conforms: true
+    evidence: EVM-equivalent OP Stack chains inherit EIP-1559 fee market; currency symbol ETH.
+  - id: oauth2
+    conforms: false
+    evidence: Public JSON-RPC exposes no OAuth2 security scheme; access is via provider RPC keys (Conduit) not OAuth.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: JSON-RPC uses its own error object (code/message/data), not RFC 9457 problem+json.

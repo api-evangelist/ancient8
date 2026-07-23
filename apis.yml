@@ -1,8 +1,15 @@
 aid: ancient8
 name: Ancient8
-description: 'Ancient8 is a company surfaced as a portfolio company of pantera-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Ancient8 is a gaming-focused Ethereum Layer 2 blockchain built on the Optimism OP Stack with
+  Celestia for data availability, designed to power Web3 gaming experiences at scale. The network is
+  EVM-equivalent, so developers deploy Solidity smart contracts and dApps using standard tooling
+  (Hardhat, Remix, thirdweb) against a public Ethereum JSON-RPC interface. Ancient8 Mainnet uses chain
+  ID 888888888 with ETH as its gas currency, complemented by a Celestia-backed testnet, native and
+  third-party bridges (Meson, Relay), block explorers (Routescan, Blockscout/A8Scan), a faucet,
+  staking, and a vault. The programmable surface exposed to integrators is the JSON-RPC endpoint over
+  HTTPS and WebSocket. Backed by Pantera Capital and surfaced into the API Evangelist network from its
+  venture portfolio.
 url: https://raw.githubusercontent.com/api-evangelist/ancient8/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,13 +17,64 @@ x-backed-by:
 - pantera-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://ancient8.gg/images/thumbnail.jpg
 tags:
 - Company
 - Crypto
-apis: []
+- Blockchain
+- Ethereum
+- Layer 2
+- Web3 Gaming
+- OP Stack
+- JSON-RPC
+apis:
+- name: Ancient8 Mainnet JSON-RPC
+  description: >-
+    Public Ethereum JSON-RPC interface for the Ancient8 Mainnet (chain ID 888888888, currency ETH),
+    available over HTTPS and WebSocket. Standard Ethereum method set for reading chain state and
+    submitting transactions. RPC access is provisioned through Conduit RPC keys.
+  humanURL: https://docs.ancient8.gg/using-ancient8-chain/network-information
+  baseURL: https://rpc.ancient8.gg
+  tags:
+  - JSON-RPC
+  - Ethereum
+  - Layer 2
+  properties:
+  - type: Documentation
+    url: https://docs.ancient8.gg/using-ancient8-chain/network-information
+  - type: BlockExplorer
+    url: https://scan.ancient8.gg/
+- name: Ancient8 Testnet JSON-RPC (Celestia)
+  description: >-
+    Public Ethereum JSON-RPC interface for the Ancient8 Celestia testnet (chain ID 28122024, currency
+    ETH), available over HTTPS and WebSocket for development and integration testing.
+  humanURL: https://docs.ancient8.gg/using-ancient8-chain/network-information
+  baseURL: https://rpcv2-testnet.ancient8.gg
+  tags:
+  - JSON-RPC
+  - Testnet
+  - Ethereum
+  properties:
+  - type: Documentation
+    url: https://docs.ancient8.gg/using-ancient8-chain/network-information
+  - type: BlockExplorer
+    url: https://scanv2-testnet.ancient8.gg/
+  - type: Faucet
+    url: https://thirdweb.com/ancient8-testnet
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +83,24 @@ maintainers:
 common:
 - type: Website
   url: https://ancient8.gg/
+- type: Documentation
+  url: https://docs.ancient8.gg/
+- type: GettingStarted
+  url: https://docs.ancient8.gg/building-on-ancient8/deploying-smart-contracts
+- type: GitHubOrganization
+  url: https://github.com/ancient8-gg
+- type: TermsOfService
+  url: https://docs.ancient8.gg/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://docs.ancient8.gg/policies/privacy-policy
+- type: LLMsTxt
+  url: llms/ancient8-llms.txt
+- type: Conformance
+  url: conformance/ancient8-conformance.yml
+- type: DomainSecurity
+  url: security/ancient8-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

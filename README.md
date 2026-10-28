@@ -64,6 +64,89 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Ancient8 is a company surfaced as a portfolio company of pantera-capital and added to the API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the enrichment pipeline.
+Ancient8 is a gaming-focused Ethereum Layer 2 blockchain built on the Optimism OP Stack with Celestia for data availability, designed to power Web3 gaming experiences at scale. The network is EVM-equivalent, so developers deploy Solidity smart contracts and dApps using standard tooling (Hardhat, Remix, thirdweb) against a public Ethereum JSON-RPC interface. Ancient8 Mainnet uses chain ID 888888888 with ETH as its gas currency, complemented by a Celestia-backed testnet, native and third-party bridges (Meson, Relay), block explorers (Routescan, Blockscout/A8Scan), a faucet, staking, and a vault. The programmable surface exposed to integrators is the JSON-RPC endpoint over HTTPS and WebSocket. Backed by Pantera Capital and surfaced into the API Evangelist network from its venture portfolio.
 
-Backed by: pantera-capital — https://ancient8.gg/
+**Areas:** Company · Cryptocurrency · Blockchain · Ethereum · Layer 2 · Web3 Gaming · OP Stack · JSON-RPC
+
+## Ancient8 on APIs.io
+
+Everything profiled for Ancient8 is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ancient8/](https://apis.io/providers/ancient8/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Ancient8 Mainnet JSON-RPC](https://apis.io/apis/ancient8/ancient8-mainnet-json-rpc/) — Public Ethereum JSON-RPC interface for the Ancient8 Mainnet (chain ID 888888888, currency ETH), available over HTTPS and WebSocket. Standard Ethereum method…
+- [Ancient8 Testnet JSON-RPC (Celestia)](https://apis.io/apis/ancient8/ancient8-testnet-json-rpc-celestia/) — Public Ethereum JSON-RPC interface for the Ancient8 Celestia testnet (chain ID 28122024, currency ETH), available over HTTPS and WebSocket for development…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Ancient8 Domain Security](https://apis.io/security/ancient8/ancient8-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://ancient8.gg/)
+- [Documentation](https://docs.ancient8.gg/)
+- [Getting started](https://docs.ancient8.gg/building-on-ancient8/deploying-smart-contracts)
+- [Terms of service](https://docs.ancient8.gg/policies/terms-of-service)
+- [Privacy policy](https://docs.ancient8.gg/policies/privacy-policy)
+- [GitHub](https://github.com/ancient8-gg)
+
+## API Evangelist rating
+
+**Kin Score 17.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ancient8/](https://apis.io/providers/ancient8/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Ancient8: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ancient8/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
